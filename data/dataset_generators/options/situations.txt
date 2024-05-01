@@ -1,29 +1,30 @@
-at a picnic
-on a cheese platter
-on a charcuterie board
-at a wine tasting
-at a cocktail party
-in a shop
-at a farmer's market
-at a gourmet restaurant
-at a bistro
-at a cafe
-at a deli counter
-on a kitchen counter
-on a dining table
-in a cellar
-in a factory
-at a festival
-at a cheese tasting event
-in a class
-at a cheese fondue party
-at a cheese and wine pairing event
-on a cheeseburger assembly line
-at a restaurant
-at a dinner party
-at a wedding reception
-at a cheese sampling station at a food expo
-at a food truck
-at a cooking competition
-at a cooking show
-in a bed and breakfast
+_10
+at a wine tasting_9
+on a charcuterie board_9
+in a shop_9
+at a gourmet restaurant_9
+on a kitchen counter_9
+on a dining table_9
+in a factory_9
+in a cellar_8
+at a picnic_8
+at a restaurant_8
+at a cooking competition_8
+at a dinner party_7
+at a wedding reception_7
+at a farmer's market_7
+on a cheese platter_7
+at a cooking show_7
+at a bistro_7
+at a cafe_7
+on a cheeseburger assembly line_7
+at a cocktail party_6
+at a festival_6
+at a deli counter_6
+at a cheese tasting event_5
+at a cheese fondue party_5
+at a cheese and wine pairing event_5
+at a cheese sampling station at a food expo_4
+at a food truck_4
+in a bed and breakfast_4
+in a class_4
