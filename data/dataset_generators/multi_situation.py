@@ -32,11 +32,11 @@ class MultiSituationPromptsDatasetGenerator(DatasetGenerator):
 
         for label in labels_names:
             prompts[label] = []
-            for adj in adjectives:
-                for nat in nature:
-                    for qty in quantity:
-                        for cadj in cheese_adjectives:
-                            for sit in situations:
+            for adj in adjectives[:5]:
+                for nat in nature[:5]:
+                    for qty in quantity[:5]:
+                        for cadj in cheese_adjectives[:5]:
+                            for sit in situations[:5]:
                                 prompts[label].append(
                                     {
                                         "prompt": f"{adj} {nat} of {qty} {cadj} {label} cheese {sit}",
