@@ -1,7 +1,7 @@
-a
-some
-many
-a lot of
-a pack of
-a packed
-an open
+a_10
+some_10
+many_10
+a pack of_10
+a packed_10
+an open_10
+a lot of_9
