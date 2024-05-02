@@ -1,0 +1,4 @@
+_target_: data.dataset_generators.multi_situation.MultiSituationPromptsDatasetGenerator
+generator: ${image_generator}
+batch_size: ${batch_size}
+output_dir: ${data_dir}/train/multi_situation
