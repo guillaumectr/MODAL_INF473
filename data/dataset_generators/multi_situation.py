@@ -22,11 +22,11 @@ class MultiSituationPromptsDatasetGenerator(DatasetGenerator):
 
     def create_prompts(self, labels_names):
         prompts = {}
-        adjectives = read_options("adjectives.txt", n=10)
-        nature = read_options("nature.txt", n=10)
-        quantity = read_options("quantity.txt", n=10)
-        cheese_adjectives = read_options("cheese_adjectives.txt", n=10)
-        situations = read_options("situations.txt", n=10)
+        adjectives = read_options("adjectives.txt", n=2)
+        nature = read_options("nature.txt", n=1)
+        quantity = read_options("quantity.txt", n=4)
+        cheese_adjectives = read_options("cheese_adjectives.txt", n=3)
+        situations = read_options("situations.txt", n=8)
 
         for label in labels_names:
             prompts[label] = []
