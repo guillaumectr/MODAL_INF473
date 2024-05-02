@@ -40,7 +40,7 @@ class MultiSituationPromptsDatasetGenerator(DatasetGenerator):
                             n_cadj = int(n_cadj)
                             for sit, n_sit in situations:
                                 n_sit = int(n_sit)
-                                n = n_adj*n_nat*n_qty*n_cadj*n_sit//1000
+                                n = n_adj*n_nat*n_qty*n_cadj*n_sit//10000
                                 prompts[label].append(
                                     {
                                         "prompt": f"{adj} {nat} of {qty} {cadj} {label} cheese {sit}",
