@@ -1,4 +1,5 @@
 from .base import DatasetGenerator
+import random
 
 def read_options(file, path="./data/dataset_generators/options/", n=-1):
     with open(path+file, 'r') as f:
@@ -47,4 +48,37 @@ class MultiSituationPromptsDatasetGenerator(DatasetGenerator):
                                         "num_images": n,
                                     }
                                 )
+        return prompts
+    
+
+    #cette fois-ci, on choisit au hasard un prompt en fonction de la pondération
+    def create_prompts_random(self, labels_names):
+        prompts = {}
+        adjectives = read_options("adjectives.txt", n=2)
+        nature = read_options("nature.txt", n=1)
+        quantity = read_options("quantity.txt", n=4)
+        cheese_adjectives = read_options("cheese_adjectives.txt", n=3)
+        situations = read_options("situations.txt", n=8)
+
+        adj, n_adj = zip(*adjectives)
+        nat, n_nat = zip(*nature)
+        qty, n_qty = zip(*quantity)
+        cadj, n_cadj = zip(*cheese_adjectives)
+        sit, n_sit = zip(*situations)
+        adj_weigths = [int(x) for x in n_adj]
+        nat_weigths = [int(x) for x in n_nat]
+        qty_weigths = [int(x) for x in n_qty]
+        cadj_weigths = [int(x) for x in n_cadj]
+        sit_weigths = [int(x) for x in n_sit]
+
+        for label in labels_names:
+            prompts[label] = []
+
+            for i in range(2000):
+                prompts[label].append(
+                                    {
+                                        "prompt": f"{adj} {nat} of {qty} {cadj} {label} cheese {sit}",
+                                        "num_images": 1,
+                                    } 
+                )
         return prompts
