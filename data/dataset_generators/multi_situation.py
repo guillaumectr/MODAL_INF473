@@ -1,4 +1,4 @@
-from .base import DatasetGenerator
+from base import DatasetGenerator
 import random
 
 def read_options(file, path="./data/dataset_generators/options/", n=-1):
@@ -82,3 +82,5 @@ class MultiSituationPromptsDatasetGenerator(DatasetGenerator):
                                     } 
                 )
         return prompts
+ms = MultiSituationPromptsDatasetGenerator(None)
+ms.create_prompts(labels_names=["ROQUEFORT", "COMTÉ", "CHÈVRE"])

@@ -9,7 +9,7 @@ A modern_8
 An authentic_8
 A stunning_7
 A majestic_7
-A peaceful_7
+A peaceful_2
 A historic_7
 A vibrant_6
 A breathtaking_6
@@ -19,7 +19,7 @@ A magnificent_6
 A serene_6
 A tranquil_6
 A delicate_6
-An exquisite_6
+An exquisite_9
 A dramatic_5
 A unique_5
 A mesmerizing_5
@@ -31,14 +31,13 @@ An idyllic_4
 A verdant_4
 A captivating_4
 A striking_4
-A grand_4
+A grand_2
 A dreamy_4
 A lush_4
 A radiant_4
 A charming_3
 A gorgeous_3
 An ethereal_3
-A whimsical_3
 An alluring_3
 A fascinating_3
 An intriguing_3
