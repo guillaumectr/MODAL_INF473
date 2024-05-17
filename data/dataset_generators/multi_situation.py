@@ -21,7 +21,7 @@ class MultiSituationPromptsDatasetGenerator(DatasetGenerator):
         super().__init__(generator, batch_size, output_dir)
         # self.num_images_per_label = num_images_per_label
 
-    def create_prompts(self, labels_names):
+    def create_prompts_V1(self, labels_names):
         prompts = {}
         adjectives = read_options("adjectives.txt", n=2)
         nature = read_options("nature.txt", n=1)
@@ -52,7 +52,7 @@ class MultiSituationPromptsDatasetGenerator(DatasetGenerator):
     
 
     #cette fois-ci, on choisit au hasard un prompt en fonction de la pondération
-    def create_prompts_random(self, labels_names):
+    def create_prompts(self, labels_names, batch_size = 400):
         prompts = {}
         adjectives = read_options("adjectives.txt", n=2)
         nature = read_options("nature.txt", n=1)
@@ -74,10 +74,10 @@ class MultiSituationPromptsDatasetGenerator(DatasetGenerator):
         for label in labels_names:
             prompts[label] = []
 
-            for i in range(2000):
+            for i in range(batch_size):
                 prompts[label].append(
                                     {
-                                        "prompt": f"{adj} {nat} of {qty} {cadj} {label} cheese {sit}",
+                                        "prompt": f"{random.choice(adj, adj_weigths, k=1)[0]} {random.choice(nat, nat_weigths, k=1)[0]} of {random.choice(qty, qty_weigths, k=1)[0]} {random.choice(cadj, cadj_weigths, k=1)[0]} {label} cheese {random.choice(sit, sit_weigths, k=1)[0]}",
                                         "num_images": 1,
                                     } 
                 )
