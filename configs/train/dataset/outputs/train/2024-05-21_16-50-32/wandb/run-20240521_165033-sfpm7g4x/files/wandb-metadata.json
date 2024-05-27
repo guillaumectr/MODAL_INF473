@@ -1,0 +1,131 @@
+{
+    "os": "Linux-5.14.0-427.16.1.el9_4.x86_64-x86_64-with-glibc2.34",
+    "python": "3.9.18",
+    "heartbeatAt": "2024-05-21T14:50:33.987770",
+    "startedAt": "2024-05-21T14:50:33.360843",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "experiment_name=dinov2_finetuned_200_without_preservation",
+        "dataset.train_path=/Data/guillaume.coutiere/train_data/finetuned/200/"
+    ],
+    "state": "running",
+    "program": "/users/eleves-b/2022/guillaume.coutiere/MODAL/MODAL_INF473/train.py",
+    "codePathLocal": null,
+    "codePath": "train.py",
+    "git": {
+        "remote": "https://github.com/guillaumectr/MODAL_INF473.git",
+        "commit": "e0797a16218334a617aed269d8606fb73909a475"
+    },
+    "email": null,
+    "root": "/users/eleves-b/2022/guillaume.coutiere/MODAL/MODAL_INF473",
+    "host": "albatros.polytechnique.fr",
+    "username": "guillaume.coutiere",
+    "executable": "/usr/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 3704.374,
+        "min": 800.0,
+        "max": 5100.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3800.0,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 3800.0,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 2269.984,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 3800.0,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 3800.0,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 3800.0,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 3800.0,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 3800.0,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 3800.0,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 3800.0,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 3800.0,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 3800.0,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 3800.0,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 3800.0,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 3800.0,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 3800.0,
+            "min": 800.0,
+            "max": 5100.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 3.990234375,
+            "used": 0.9446067810058594
+        }
+    },
+    "gpu": "NVIDIA RTX A5000",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA RTX A5000",
+            "memory_total": 25757220864
+        }
+    ],
+    "memory": {
+        "total": 62.28952407836914
+    }
+}

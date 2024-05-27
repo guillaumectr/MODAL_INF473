@@ -1,0 +1,2 @@
+- experiment_name=dinov2_finetuned_200_without_preservation
+- dataset.train_path=/Data/guillaume.coutiere/train_data/finetuned/200/

@@ -1,0 +1,8 @@
+instance:
+  _target_: models.simple_double.SimpleDouble
+  num_classes: ${dataset.num_classes}
+  frozen: True
+  unfreeze_last_layer: True
+
+name: SIMPLEDOUBLE
+

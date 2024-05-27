@@ -1,0 +1,13 @@
+Using cache found in /users/eleves-b/2022/guillaume.coutiere/.cache/torch/hub/facebookresearch_dinov2_main
+/users/eleves-b/2022/guillaume.coutiere/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+/users/eleves-b/2022/guillaume.coutiere/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+/users/eleves-b/2022/guillaume.coutiere/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+[2024-05-21 16:50:35,417][dinov2][INFO] - using MLP layer as FFN
+Error executing job with overrides: ['experiment_name=dinov2_finetuned_200_without_preservation', 'dataset.train_path=/Data/guillaume.coutiere/train_data/finetuned/200/']
+Error in call to target 'data.datamodule.DataModule':
+FileNotFoundError(2, 'No such file or directory')
+full_key: datamodule
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
