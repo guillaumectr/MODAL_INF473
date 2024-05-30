@@ -14,6 +14,8 @@ cheese_list = [["BRIE", "MELUN"], ["CAMEMBERT", "PRESIDENT"], ["EPOISSES", "BERT
                 ["BEAUFORT"], ["MUNSTER"], ["CHABICHOU", "POITOU"], ["TOMME"], ["REBLOCHON"], ["EMMENTAL"], ["FETA"], ["OSSAU", "IRATY"], ["MIMOLETTE"],
                 ["MAROILLES"], ["GRUYERE"], ["MOTHAIS", "FEUILLE"], ["VACHERIN", "FRIBOURGEOIS"], ["MOZZARELLA"], ["TETE", "MOINES", "BELLELAY", "TETEDEMOINE"], ["FRAIS"]]
 
+ordered_indexes = [1, 4, 10, 12, 27, 18, 31, 26, 29, 8, 7, 25, 22, 6, 2, 24, 30, 17, 33, 32, 3, 0, 21, 5, 35, 28, 9, 11, 23, 16, 15, 14, 19, 36, 20, 34, 13]
+
 def tensor_to_numpy(tensor):
     numpy_image = tensor.detach().cpu().permute(1, 2, 0).numpy()
     return numpy_image
@@ -41,7 +43,7 @@ class DinoV2OCR(nn.Module):
                             A = A or (fuzz.ratio(word, img_word) > 70)
                 if A:
                     z = torch.zeros(len(cheese_list))
-                    z[label] = 1
+                    z[ordered_indexes[label]] = 1
                     return z
         return None
 
